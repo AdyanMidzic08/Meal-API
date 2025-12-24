@@ -21,12 +21,6 @@ h1 {
     gap: 2%;
 }
 
-#input-Grid div{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 
 input{
     width: 50%;
@@ -43,11 +37,6 @@ input{
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-#header img {
-    width: 10%;
-    height: 5%;
 }
 
 #input-Grid input,
@@ -113,15 +102,6 @@ input{
 #Meal-Grid {
     display: grid;
     grid-template-columns: auto auto auto;
-}
-
-#output {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    width: 80%;
-    margin: 50px auto;
-    gap: 30px;
-    justify-content: center;
 }
 
 .Meal-Box {
