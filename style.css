@@ -1,0 +1,189 @@
+@font-face {
+    font-family: IOS;
+    src: url(./Font/SF-Pro-Display-Regular.otf);
+}
+
+body {
+    font-family: IOS;
+    margin: 0;
+    background-color: #CFCFCF;
+}
+
+h1 {
+    text-align: center;
+    font-size: 5rem;
+    color: white;
+}
+
+#input-Grid{
+    display: flex;
+    justify-content: center;
+    gap: 2%;
+}
+
+#input-Grid div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+input{
+    width: 50%;
+    height: 5vh;
+}
+
+#button {
+    width: 10%;
+    height: 6vh;
+    background-color: #E3E3E3;
+}
+
+#header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#header img {
+    width: 10%;
+    height: 5%;
+}
+
+#input-Grid input,
+#input-Grid #button {
+    background: rgba(255, 255, 255, 0.12);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 8px 24px rgba(16, 24, 40, 0.08);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border-radius: 10px;
+    color: #111;
+    transition: transform 150ms ease, background 150ms ease, box-shadow 150ms ease;
+}
+
+#input-Grid input {
+    padding: 0.4rem 0.8rem;
+    outline: none;
+    
+}
+
+#input-Grid #button {
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#input-Grid input:focus,
+#input-Grid #button:hover {
+    background: rgba(255, 255, 255, 0.18);
+    transform: translateY(-2px);
+    box-shadow: 0 12px 30px rgba(16, 24, 40, 0.12);
+}
+
+#alphabet{
+    margin-top: 4%;
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    margin: 4% auto;
+    justify-content: center;
+    gap: 10px;
+    text-align: center;
+    color: white;
+}
+
+.box {
+    background: rgba(255, 255, 255, 0.12);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border-radius: 50%;
+    padding: 2%;
+    transition: background 150ms ease, transform 150ms ease;
+    cursor: pointer;
+}
+
+.box:hover {
+    background: rgba(255, 255, 255, 0.25);
+    transform: scale(1.1);
+}
+
+#Meal-Grid {
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+#output {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    width: 80%;
+    margin: 50px auto;
+    gap: 30px;
+    justify-content: center;
+}
+
+.Meal-Box {
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.05));
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-radius: 20px;
+    color: white;
+    padding: 25px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.Meal-Box:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.5);
+    border-color: rgba(255, 255, 255, 0.5);
+}
+
+.Meal-Box img {
+    width: 100%;
+    border-radius: 15px;
+    margin-bottom: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+.Meal-Box a {
+    text-decoration: none;
+    margin-top: auto;
+    width: 100%;
+}
+
+.youtube-btn {
+    background: linear-gradient(45deg, #FF0000, #CC0000);
+    color: white;
+    padding: 12px 24px;
+    border-radius: 25px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 0.9rem;
+    box-shadow: 0 4px 15px rgba(255, 0, 0, 0.3);
+    transition: all 0.3s ease;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.youtube-btn:hover {
+    background: linear-gradient(45deg, #CC0000, #AA0000);
+    transform: scale(1.05);
+    box-shadow: 0 6px 20px rgba(255, 0, 0, 0.5);
+}
+
+.youtube-btn::before {
+    content: "▶";
+    font-size: 1.1em;
+}
